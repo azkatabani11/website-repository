@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — HEAL Youth Wellness Platform</title>
+  <meta name="description" content="Get in touch with HEAL: call or WhatsApp 050 123 4567, email heal@gmail.com, or send a direct inquiry to our wellness concierge team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="index.html">
+        <span class="leaf" aria-hidden="true">🌿</span> HEAL
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">☰</button>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a class="btn btn-primary btn-pill" href="#inquiry">Start Free Trial</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Intro -->
+    <section class="page-intro">
+      <div class="container">
+        <span class="chip">● We're here for you</span>
+        <h1>Get in touch with HEAL</h1>
+        <p class="lede" style="max-width:36rem;color:var(--ink-soft);font-size:1.1rem">Have questions about our workout videos, customized diet plans, or memberships? Our coaches and team are one tap away.</p>
+        <div class="time-row" style="margin-top:0.75rem">
+          <span class="chip chip--light">3 wellness advisors online now</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact channels -->
+    <section style="padding-top:1rem" aria-label="Ways to contact us">
+      <div class="container grid grid--2">
+        <div class="card card--elevated contact-card">
+          <span class="label">📞 Helpline &amp; WhatsApp · <span style="color:var(--primary-mid)">Active</span></span>
+          <p class="value">050 123 4567</p>
+          <p style="color:var(--ink-soft);font-size:.9rem;margin:0">Available 7 days a week · 8:00 AM – 10:00 PM (GST)</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+971501234567">Call now</a>
+            <a class="btn btn-ghost" href="https://wa.me/971501234567" rel="noopener" target="_blank">WhatsApp ↗</a>
+          </div>
+        </div>
+        <div class="card card--elevated contact-card">
+          <span class="label">✉️ Support &amp; nutrition · <span style="color:var(--terracotta)">Express</span></span>
+          <p class="value">heal@gmail.com</p>
+          <p style="color:var(--ink-soft);font-size:.9rem;margin:0">⚡ Typically replies within 2 hours</p>
+          <div class="hero-actions">
+            <a class="btn btn-secondary" href="mailto:heal@gmail.com">Email heal@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry form -->
+    <section id="inquiry" style="padding-top:1rem">
+      <div class="container">
+        <div class="card card--elevated form-card">
+          <h2>Send a direct inquiry</h2>
+          <p style="color:var(--ink-soft)">Select your current focus and tell us how we can support your rhythm.</p>
+          <form id="contact-form" novalidate>
+            <fieldset class="field" style="border:0;padding:0;margin:0 0 1.25rem">
+              <legend style="font-weight:700;font-size:.9rem;margin-bottom:.5rem">Topic of interest</legend>
+              <div class="topic-chips" role="radiogroup" aria-label="Topic of interest">
+                <input type="radio" name="topic" id="topic-workout" value="Workout inquiry" checked>
+                <label for="topic-workout">Workout inquiry</label>
+                <input type="radio" name="topic" id="topic-nutrition" value="Nutrition advice">
+                <label for="topic-nutrition">Nutrition advice</label>
+                <input type="radio" name="topic" id="topic-membership" value="Membership support">
+                <label for="topic-membership">Membership support</label>
+                <input type="radio" name="topic" id="topic-general" value="General question">
+                <label for="topic-general">General question</label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="name" autocomplete="name" placeholder="e.g. Maya Adams" required>
+              <p class="error-msg" id="err-name">Please tell us your name.</p>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="maya@example.com" required>
+              <p class="error-msg" id="err-email">Please enter a valid email address so we can reply.</p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+971 50 000 0000">
+            </div>
+            <div class="field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help your health journey..." required minlength="10"></textarea>
+              <p class="error-msg" id="err-message">Please write at least a sentence or two (10 characters or more).</p>
+            </div>
+            <button class="btn btn-primary" type="submit" style="width:100%">Send message 🌿</button>
+            <p class="hint" style="font-size:.8rem;color:var(--ink-soft);margin-top:.75rem">This demo form validates your input and confirms on screen. Connect it to your email service or a Vercel serverless function before going live.</p>
+            <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="padding-top:1rem">
+      <div class="container form-card">
+        <div class="section-head">
+          <h2>Quick answers</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Can I cancel my 50 dhs monthly plan anytime?</summary>
+            <div class="answer">Yes. Monthly plans are flexible with no lock-in — cancel from your account or ask a coach and we'll do it with you. Your access continues until the end of the paid period.</div>
+          </details>
+          <details>
+            <summary>Are 15/30/45 min workouts beginner friendly?</summary>
+            <div class="answer">Every class is tagged Beginner, Intermediate or High Energy. Beginners start with the 15-minute flow &amp; flexibility sessions — the coach shows a lighter variation for every movement.</div>
+          </details>
+          <details>
+            <summary>Choosing Vegan, Carnivore, or Fat Loss diets?</summary>
+            <div class="answer">Send us a "Nutrition advice" inquiry above. A HEAL Lab advisor reviews your goals and daily routine, then recommends one roadmap with macro targets and a weekly prep list.</div>
+          </details>
+          <details>
+            <summary>Where are the physical wellness hubs?</summary>
+            <div class="answer">Our partner sanctuaries are across Dubai &amp; the UAE, including the HEAL Coastal Sanctuary at Kite Beach. Online memberships include the same class library, wherever you are.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social / closing -->
+    <section style="padding-top:1rem">
+      <div class="container">
+        <div class="cta-band">
+          <h2>Join our mindful movement</h2>
+          <p>Follow daily rituals, streaks and class drops from the HEAL community.</p>
+          <div class="hero-actions" style="justify-content:center">
+            <a class="btn btn-primary" href="index.html">Browse classes</a>
+            <a class="btn btn-ghost" href="mailto:heal@gmail.com">heal@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">🌿 HEAL</p>
+          <p>Holistic health and nutritional awareness as a refined daily ritual — made for conscious young adults.</p>
+          <p>Dubai &amp; UAE Wellness Hubs</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="tel:+971501234567">Call 050 123 4567</a></li>
+            <li><a href="mailto:heal@gmail.com">heal@gmail.com</a></li>
+            <li><a href="#faq">Quick answers (FAQ)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> HEAL Youth Wellness Platform</span>
+        <span>Made with calm ✦ Move. Eat. Feel.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scroll.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

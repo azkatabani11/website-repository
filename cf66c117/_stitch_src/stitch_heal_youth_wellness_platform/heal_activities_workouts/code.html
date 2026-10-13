@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Outfit:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#742814", "on-primary": "#ffffff", "secondary-fixed-dim": "#ffb4a1", "on-tertiary-fixed-variant": "#2c4e34", "surface-variant": "#dfe4df", "outline": "#717972", "primary-fixed-dim": "#9fd2b1", "primary-container": "#2a5a40", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#7c2e19", "error": "#ba1a1a", "tertiary-fixed": "#c5ecc9", "on-primary-fixed-variant": "#1f5036", "inverse-primary": "#9fd2b1", "surface-dim": "#d7dbd6", "surface-container-lowest": "#ffffff", "outline-variant": "#c0c9c0", "surface-container-highest": "#dfe4df", "surface-bright": "#f6fbf5", "secondary-fixed": "#ffdbd2", "inverse-surface": "#2c322e", "surface": "#f6fbf5", "primary-fixed": "#baefcc", "primary": "#10422a", "background": "#f6fbf5", "on-tertiary-container": "#a7cdab", "on-background": "#181d1a", "surface-tint": "#38684d", "on-error": "#ffffff", "error-container": "#ffdad6", "tertiary-container": "#36583e", "on-tertiary-fixed": "#00210c", "tertiary-fixed-dim": "#aad0ae", "on-secondary-fixed": "#3c0800", "surface-container-low": "#f0f5f0", "on-surface-variant": "#414943", "inverse-on-surface": "#edf2ed", "surface-container": "#ebefea", "on-secondary": "#ffffff", "on-primary-fixed": "#002111", "on-primary-container": "#9ccfae", "tertiary": "#1f4028", "on-surface": "#181d1a", "secondary-container": "#fc9174", "secondary": "#9a442d", "surface-container-high": "#e5e9e4", "on-tertiary": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "margin-tablet": "2rem", "gutter": "1rem", "margin": "1.25rem", "space-sm": "0.5rem", "gutter-tablet": "1.5rem" }, "fontFamily": { "body-lg": [ "Manrope" ], "headline-lg-mobile": [ "Outfit" ], "headline-lg": [ "Outfit" ], "label-lg": [ "Manrope" ], "display-lg": [ "Outfit" ], "label-md": [ "Manrope" ], "title-md": [ "Manrope" ], "headline-md": [ "Outfit" ], "body-md": [ "Manrope" ], "headline-sm": [ "Outfit" ], "body-sm": [ "Manrope" ], "display-lg-mobile": [ "Outfit" ], "label-sm": [ "Manrope" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "title-md": [ "16px", { "lineHeight": "22px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "18px", "fontWeight": "400" } ], "display-lg-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="HEAL Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V1Z9CNTZj6MvRA8nQ2ob0EZV631poCLNQXeffY1rfXcjRhF_Fmn95qVNdJLm8VG-8ARI7u6Vn0yu1mviqPLwag9LM7REXPFOy_0ciXIXRtrYV5Zu6LPboocYBJbD9JPbiwG20Rse_JYkFz5ARt6a4teskqKCQ28bavPxjZg6iuIpuOeVmLj5J_n4VVo-GFpNf9EzUDn2WXZ6fLVWYNUKZp2dDyOsSpo13G2qLi1tkA_C8OUa86cgPB6eg4"/><span class="font-title-md text-title-md tracking-tight text-primary font-bold hidden sm:inline">HEAL</span><span class="font-title-md text-title-md text-on-surface truncate ml-space-xs">Activities</span></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnTLQn27rno779XS1uIC0OLPDZslO01Pixe8uI6Y2yAACVkmEmvogCDbNOTc2U8mFeiKYjM6urbwrFsenfXLONYO--Ooh0r0vRRyqRd47mUzbz4lq_f2Ekm_aaJTTcwT6zrTcxlMHZyDdNVPJQX1ZMXzdsjs4TUTcjPooqWoe9TEp6vo_qsTxs7tN9pvZ7J-KXY37X1mkf-BxT7EA4q-vpe7zRGrCNC68cy7nd2swLiibtUF3dJcn1Zg"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive State Controller & Layout -->
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Top Editorial Header & Mindful Daily Streak -->
+<header class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide uppercase">Daily Practice</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md font-bold">4 Day Flow</span>
+</div>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">Movement for Body &amp; Mind</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Select your practice and set your session duration to reset your nervous system.</p>
+</header>
+<!-- Filters Zone -->
+<div class="flex flex-col gap-space-md">
+<!-- Duration Pills Selector -->
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-2 font-bold">Duration</span>
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5" id="duration-filters">
+<button class="duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary" data-duration="all" type="button">
+            All Intervals
+          </button>
+<button class="duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-duration="15" type="button">
+            15 Mins
+          </button>
+<button class="duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-duration="30" type="button">
+            30 Mins
+          </button>
+<button class="duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-duration="45" type="button">
+            45 Mins
+          </button>
+</div>
+</div>
+<!-- Activity Category Selector -->
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block mb-2 font-bold">Discipline</span>
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5" id="category-filters">
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary-container text-on-primary shadow-sm" data-category="yoga" type="button">
+<span class="material-symbols-outlined text-[16px]">self_improvement</span>
+            Yoga
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="pilates" type="button">
+<span class="material-symbols-outlined text-[16px]">accessibility_new</span>
+            Pilates
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="stretch" type="button">
+<span class="material-symbols-outlined text-[16px]">sports_gymnastics</span>
+            Functional Stretch
+          </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-category="breath" type="button">
+<span class="material-symbols-outlined text-[16px]">air</span>
+            Breath &amp; Core
+          </button>
+</div>
+</div>
+</div>
+<!-- SECTION 1: YOGA -->
+<section class="flex flex-col gap-space-md transition-all duration-300" id="section-yoga">
+<!-- Section Title & Badge -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">self_improvement</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Yoga Flow &amp; Reset</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Flexibility &amp; nervous system grounding</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-medium">3 Flows</span>
+</div>
+<!-- Science & Importance Bento Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-3 relative overflow-hidden shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">science</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">The Science of Yoga</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_down</span> -27% Cortisol
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Why practice today? Studies show conscious flow sequences lower serum cortisol by <strong class="text-primary font-semibold">27%</strong> within 30 minutes, release tension from desk work, and align the spine for sustained energy.
+        </p>
+<!-- Mini Metric Badges -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Postural Reset</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">Spine Length</span>
+</div>
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vagus Nerve</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">Parasympathetic</span>
+</div>
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hip Tension</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-0.5">Deep Release</span>
+</div>
+</div>
+</div>
+<!-- Yoga Video Cards Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: 15 Min Sunrise Sun Salutations -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="15">
+<!-- Video Media Thumbnail Container -->
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Serene young woman practicing sunrise sun salutations on a terracotta mat in a sunlit botanical studio with warm morning light filtering through lush monstera leaves in natural forest sage tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOI7nMwo0U13xdhqv16PNbazp0sqHmP04cmq60IF2KoVpztdpzT2dAymUyCkle5mMq-RcZWiaucSZPQX_WY4R_tRkhOqgaBLu5aaGLyFqSeEbo20csarSK-RFP3mtLfY-f6mY_Vc_43F3WuPd_EuAft4R0rTckda9NSp4H5K-z8Oq7INYqSDWWeAENTDfwbQ40bvdTP8PARZzt87C8c2Ytx4ruKSejdfdlDNUQgFYNbUMcwa3tR4kvQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<!-- Badges overlay -->
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary/85 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 15 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                Gentle
+              </span>
+</div>
+<!-- Heart / Favorite -->
+<button aria-label="Save flow" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md text-on-surface flex items-center justify-center hover:bg-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<!-- Centered Floating Play Button -->
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest text-primary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<!-- Bottom Video Metadata Bar inside thumbnail -->
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Mat Only
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_twilight</span> Morning Flow
+              </span>
+</div>
+</div>
+<!-- Video Body Details -->
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">15 Min Sunrise Sun Salutations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gentle morning stretch • Fluid spinal warm-up</p>
+</div>
+</div>
+<!-- Instructor & Action Footer -->
+<div class="flex items-center justify-between pt-1 border-t-0">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Close up portrait of a calm wellness instructor smiling softly in earthy sage athletic wear with warm studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC83MWEScfsEdmLip0TpLK66vdrJxITTQSOGFVggMB6JheSRlhL2Az1Q9c20zgvbgF4oKcrSk8SlEZXSRjaSTkEsRh0bfWppHQwrZMPdU_oMaWhNRbhkZtPQLPsXhO8LVRuJZANecneFJcow6y5UjG4gJAZyiQJ_7qtC-925Wg6BiMjFM6WqQml9WrzzTU-Mef0geFKnr2IyYush3izjilkRHpmzbbqLf5mt94z0fpZbf23jb43a5BfqA"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Maya Lin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Somatic Guide</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Start Session</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: 30 Min Vinyasa Flow for Mental Reset -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="30">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Woman holding an elegant Warrior II yoga posture on a sage green textured mat in an airy modern studio with warm oak accents and soft ambient daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFfUqaH1ZdaGmX3hJsF-CoemT-HlfMO2rlRR7kzRoJqsIXbvtTnG9zPLg67lU7tQtsKXVgwwjMu50NhdzbdKLE98KVJLrzrXAXTv08qnzxSmX1G0OSRmWfE3_1MONbSFRnTqaD-O_EvQ_fUO5YVFeO88_cXYrOwrJEKJn7HhVMNdSvy2obAqyYfUVESJCZo4zblo2nW7n_NrZofmIlHdE9TyUMYOWvjp6_zPtLBui092jubsZb9VvUeA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary/85 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 30 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                Moderate
+              </span>
+</div>
+<button aria-label="Save flow" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md text-on-surface flex items-center justify-center hover:bg-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest text-primary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Mat &amp; 1 Block
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span> Cortisol Focus
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">30 Min Vinyasa Flow for Mental Reset</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stress relief &amp; flexibility • Heart-opening sequencing</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of an athletic male yoga instructor with tied back hair and a calm expression against a warm neutral textured backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWbjeaoLBCRYMW_x4rtwXxJf5ZzYVWj1rjc2WT6QCGY7lh6N-SC_JhVUKAptqGYdzcjJqqEeLIjKd-tL_uzDN3bWfldUG7bObSVXPiAG38UoQ79WYjyJwyfzZq5bKhlYISJmTn0t4AoisJSJsDPcgQLunq9Agn8BhyPuIrvGZGs-BNMYjxq9znEJEwGRxhhFkfaSzZ795SuEmlgZHDtf6Ads5o5Y80Felxt9MRKRH-AUNp0wd02R4oCQ"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Devon Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vinyasa Lead</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1 hover:bg-primary-container transition-colors shadow-sm" type="button">
+<span>Start Session</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: 45 Min Deep Hip & Spine Mobility -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="45">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Practitioner relaxing deeply into a supported pigeon pose on an organic linen bolster in a tranquil sanctuary room with warm earthen clay walls and soft diffused candlelight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALS6myMGl6cnUCuO6rShiWALoYI2lUyls8dWaA045Wwau7xEICmz-tNyuKMSpYdX4gVwLpXV66FG_aSqoDGOqHNhMhRaPSEuJmwOefYBGoqgsFClWiSWrTBs3gHgp3MKikMhiblNlR7B6uHA3ZsCxiWxdOCzrKLOdhh9eMhJ-vjvlGeku3io1nvhjXLbv_38Z-wWoatj7CLYVxFhzquuCBwC_QRiOMk3av6mm27hTAXJ4-dQFYVQ45Sw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-primary/85 backdrop-blur-md text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 45 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                Deep Restore
+              </span>
+</div>
+<!-- Locked badge indicating premium masterclass -->
+<div class="absolute top-2.5 right-2.5 px-2 py-1 rounded-full bg-surface-container-highest/90 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> HEAL+
+            </div>
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest/95 text-primary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Mat &amp; Strap
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hotel</span> Evening Restoration
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">45 Min Deep Hip &amp; Spine Mobility</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full body restoration • Fascial release for desk sitters</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Editorial portrait of a senior mindfulness instructor with silver hair wearing warm terracotta linen in an architecturally serene studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZc9hlwROYhJBoRbpSB5nJOteJkHzdC1Fb5WXaK80LNEXRxhmvlQbFealW_prNpkBvj66TtpCV_KUGYbZZ_CUq9cj_HBw0yrJKsxRAg1UjDldKejkC6i1V1uLd9ntu_7oy2TtqckA8PzAUtbJ46erCvLjt638D5Gc5saVKHtKcHsbRu9fT5BKL7WnHAwxwKTIapPe3Tz8wZK0Fsrhh-z18qVyzKg8aLllE2KG_Oirnf8mEkMRZwzUvaw"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Elena Rostova</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mobility Specialist</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center gap-1 hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+<span>Unlock Session</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- SECTION 2: PILATES -->
+<section class="flex flex-col gap-space-md transition-all duration-300 mt-space-sm" id="section-pilates">
+<!-- Section Title & Badge -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">accessibility_new</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Pilates &amp; Core Control</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Precision alignment &amp; joint stabilization</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-medium">3 Classes</span>
+</div>
+<!-- Science & Importance Bento Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-3 relative overflow-hidden shadow-sm">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">vital_signs</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">The Science of Pilates</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Zero Joint Impact
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Why practice today? Builds deep transversus abdominis and pelvic core endurance, decompresses the lumbar spine by activating stabilizing stabilizers, and strengthens posture without explosive joint strain.
+        </p>
+<!-- Mini Metric Badges -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lumbar Spine</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-0.5">Decompressed</span>
+</div>
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Deep Core</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">T.A. Activation</span>
+</div>
+<div class="bg-surface-container rounded-lg p-2 flex flex-col items-center text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Joint Health</span>
+<span class="font-label-md text-label-md text-primary font-bold mt-0.5">100% Low Impact</span>
+</div>
+</div>
+</div>
+<!-- Pilates Video Cards Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: 15 Min Mat Pilates Sculpt -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="15">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Athletic woman executing a controlled side-lying Pilates leg lift on a minimalist warm-sand mat, soft natural daylight illuminating toned form with botanical terracotta studio tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuy08y3g7ub_fyBY1RHWJsNBLEFogG458b8JHueYm4NeYNCNJYRvaA3RTNvtI-Pu1kFioBu_9UNc9kzOBvXWj-Gxq42rLqhrZZ7tWUPGbNqP0n-NTBaO309F4HNAdakL_pIK58RJGCa_-6c7OssiYKcVBiYe4udhJtEJMXHUh-4REL6vAPS3BcDOBDMmyXqTl9e2kLyi-IIt1TYXxEbMX969z0PXocsHtL1584xe_HjGOMUws9sEVtCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary/90 backdrop-blur-md text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 15 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold">
+                Sculpt
+              </span>
+</div>
+<button aria-label="Save flow" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md text-on-surface flex items-center justify-center hover:bg-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest text-secondary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Mat Only
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Quick Burn
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">15 Min Mat Pilates Sculpt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Glutes &amp; lower abs • Targeted pulse repetitions</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of an energetic female Pilates trainer with sleek high bun smiling confidently in a modern bright fitness studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi5HkYSA7_HHViIcBSo-k85KHYcytZneF0mHJENkKzEl2rTdy4Onwb7hoO9wKJ_kAdmD_jSxUrziWjs6JFScY3lPJpNrpbGEoeB6hL656KGl3GDhHeOO3eX-5PcaJuJosRK3OTzMUJyn1QUJHdBJknOnqiyTQ-KhuQBqROuXqcMpEiW5cyJokUrXyKtkZ_aYB5eFauLpctjSAeMULroaHnkytons77KM_4SXUF8AYIuk7XyQAZI4UR0A"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Clara Hughes</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Classical Pilates</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1 hover:bg-on-secondary-container transition-colors shadow-sm" type="button">
+<span>Start Session</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: 30 Min Posture & Alignment Series -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="30">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Pilates practitioner performing a graceful spinal teaser roll up on an ivory mat with focused poise, clean architectural background with warm morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaCX4SiYcdM4L7NqGHOcBckjIQRa9UoDwZfcJlU0m2b7imaJJLTTXfAXgrjX22TAllGidblw0kptVMjU0YV6Ubej_CBIoTnd7jUa41Y2SaOEvK7pOR0A5LMO2C71pyV0ycc_npiK5hHzqDp6ESM1lt-KuF-IQbNO4BVM3pzJHzgB_CQLKpl3CD43hXm4U-VYmQHxP1HBGVTxKmrK6my5wje5twQTVtW9r6XR_KGlPSuwJ8CL3wvSmDyg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary/90 backdrop-blur-md text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 30 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                Alignment
+              </span>
+</div>
+<button aria-label="Save flow" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface/80 backdrop-blur-md text-on-surface flex items-center justify-center hover:bg-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest text-secondary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Mat &amp; Towel
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">straighten</span> Spine Length
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">30 Min Posture &amp; Alignment Series</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spine decompress &amp; obliques • Desk worker posture fix</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Smiling physiotherapist and Pilates educator wearing olive green athletic tank with warm clean lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBstUbL5g2YAhVNGiicKeSLxYgmu9Lsa2ROl1zDK0G2IDIoTQUFADD-2OhqUo50oW5WKiwpmwKlW2M4FN1EudBB578IFVUF-DuPjL7ypnhUqGTYXyyVkUA8OIryqFbbRls3cKZeHZpaFDDLWYMx3bNyufIgWGZkUQi-ul-owvF6KTTltzWCbq71MnwS6oEWVseDqppgH8h8YBpdMleid1rJ7dFM33vftj-qWDdu0k3uuaUjFzWgLAt3kQ"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tariq Thorne</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Postural Rehab</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center gap-1 hover:bg-on-secondary-container transition-colors shadow-sm" type="button">
+<span>Start Session</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: 45 Min Athletic Pilates Burn -->
+<article class="video-card rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-3 relative transition-transform active:scale-[0.99]" data-card-duration="45">
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Intense high-focus Pilates plank crunch demonstration on an earth-tone exercise mat with subtle water mist and warm low lighting in a quiet minimalist gym." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL_ZFx9V5ZQO_E_CDHcLwL-6UBUvyJbIylIv42QFk7jFixWmUWVsPSzTu6Z9vyW5uqiHWY_IGal1P_Htfwl2ruhIIUUl6xVxdo5kSWbbmD2Al_adUQO3UpLzOGRGPqDWRopxDSplKexESHz6G-hLYCKj10--MGO7M9b5td9bsSPC5m7_qFMFPemxT1E_9Q7px6WVdI2QsYGpHv_DNRwYAK6JIL4urKfQMbXrs72KeCqr1soRi-6TP46g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-black/20"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary/90 backdrop-blur-md text-on-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">timer</span> 45 Mins
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+                Advanced
+              </span>
+</div>
+<!-- Lock badge -->
+<div class="absolute top-2.5 right-2.5 px-2 py-1 rounded-full bg-surface-container-highest/90 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> HEAL+
+            </div>
+<button aria-label="Start video" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest/95 text-secondary shadow-lg flex items-center justify-center hover:scale-110 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px] translate-x-0.5" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> Resistance Loop
+              </span>
+<span class="font-label-sm text-label-sm drop-shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">whatshot</span> Full Resistance
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">45 Min Athletic Pilates Burn</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full body resistance • High continuous muscular time-under-tension</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait of an energetic athletic female trainer with tied braided hair and focused warm smile in studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt2v_0XL7o3lsc9py7WlWuW3rx2hJvWdUkZsgs56Sc7krYDlYS4IXrJATyFwff6a4z1mdHWzx8QD0EU7yfAYU-ELj9yvdSajCxHcezU9hi9XWZLo6vuL2PE98LvH4hS5P4B6Wu_hK_lz_s3-CxnR-RH-uYgh-B3X-iWbxU2Wpce5hOP5d3Aan4Y5i9zHALs_OtaevXZD0z4DrCJ8ytUWR-n-W-tUcteUYkJ691Ga7wU71NLc1Ml9ba4A"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sienna Croft</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conditioning Lead</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center gap-1 hover:bg-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+<span>Unlock Session</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Supportive Empty Filter State (Shown if no items match duration) -->
+<div class="hidden flex flex-col items-center justify-center p-8 text-center bg-surface-container-low rounded-xl gap-3" id="filter-empty-state">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[24px]">timelapse</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface font-semibold">No Sessions in This Interval</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">We are actively producing new restorative sessions for this specific time frame.</p>
+</div>
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md mt-1" id="reset-filter-btn" type="button">
+        Reset to All Intervals
+      </button>
+</div>
+<!-- Mindful Habit Completion Bottom Toast Prompt -->
+<div class="p-space-md rounded-xl bg-primary-container text-on-primary flex items-center justify-between shadow-md">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider block font-bold">Ritual Tracker</span>
+<span class="font-title-md text-title-md font-semibold">Log offline workout?</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-bold shadow-sm hover:bg-primary-fixed transition-colors" type="button">
+        Log +15m
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function initActivityDirectory() {
+    const durationButtons = document.querySelectorAll('.duration-btn');
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const videoCards = document.querySelectorAll('.video-card');
+    const yogaSection = document.getElementById('section-yoga');
+    const pilatesSection = document.getElementById('section-pilates');
+    const emptyState = document.getElementById('filter-empty-state');
+    const resetFilterBtn = document.getElementById('reset-filter-btn');
+
+    let currentDuration = 'all';
+    let currentCategory = 'all'; // Default shows all, or switches when clicked
+
+    function applyFilters() {
+      let visibleCardCount = 0;
+
+      // Handle Category visibility
+      if (currentCategory === 'yoga') {
+        yogaSection.classList.remove('hidden');
+        pilatesSection.classList.add('hidden');
+      } else if (currentCategory === 'pilates') {
+        yogaSection.classList.add('hidden');
+        pilatesSection.classList.remove('hidden');
+      } else {
+        yogaSection.classList.remove('hidden');
+        pilatesSection.classList.remove('hidden');
+      }
+
+      // Handle Duration filtering on cards
+      videoCards.forEach(card => {
+        const cardDuration = card.getAttribute('data-card-duration');
+        const parentSectionHidden = card.closest('section').classList.contains('hidden');
+
+        if (currentDuration === 'all' || cardDuration === currentDuration) {
+          card.classList.remove('hidden');
+          if (!parentSectionHidden) {
+            visibleCardCount++;
+          }
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Show empty state if nothing matches
+      if (visibleCardCount === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+      }
+    }
+
+    // Duration filter pill clicks
+    durationButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        durationButtons.forEach(b => {
+          b.className = 'duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+        });
+        btn.className = 'duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary';
+        
+        currentDuration = btn.getAttribute('data-duration');
+        applyFilters();
+      });
+    });
+
+    // Category filter pill clicks
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedCat = btn.getAttribute('data-category');
+        
+        // Toggle if clicked again
+        if (currentCategory === selectedCat) {
+          currentCategory = 'all';
+          categoryButtons.forEach(b => {
+            b.className = 'category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+          });
+        } else {
+          currentCategory = selectedCat;
+          categoryButtons.forEach(b => {
+            b.className = 'category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+          });
+          btn.className = 'category-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all flex items-center gap-1.5 bg-primary-container text-on-primary shadow-sm';
+        }
+
+        applyFilters();
+      });
+    });
+
+    // Reset button inside empty state
+    if (resetFilterBtn) {
+      resetFilterBtn.addEventListener('click', () => {
+        currentDuration = 'all';
+        durationButtons.forEach((b, index) => {
+          if (index === 0) {
+            b.className = 'duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary';
+          } else {
+            b.className = 'duration-btn px-4 py-2 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high';
+          }
+        });
+        applyFilters();
+      });
+    }
+
+    // Micro-interaction for bookmark save buttons
+    document.querySelectorAll('[aria-label="Save flow"]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const icon = btn.querySelector('.material-symbols-outlined');
+        if (icon.textContent === 'bookmark') {
+          icon.textContent = 'bookmark_added';
+          btn.classList.add('text-primary');
+        } else {
+          icon.textContent = 'bookmark';
+          btn.classList.remove('text-primary');
+        }
+      });
+    });
+
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(24,29,26,0.05)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="home-discover" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-label-sm mt-0.5">Discover</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 transition-colors text-primary font-label-md" data-path="activities" href="#"><span class="material-symbols-outlined text-[22px]">fitness_center</span><span class="font-label-sm text-label-sm mt-0.5">Activities</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="nutrition" href="#"><span class="material-symbols-outlined text-[22px]">nutrition</span><span class="font-label-sm text-label-sm mt-0.5">Nutrition</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="memberships-pricing" href="#"><span class="material-symbols-outlined text-[22px]">card_membership</span><span class="font-label-sm text-label-sm mt-0.5">Pricing</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-[22px]">support_agent</span><span class="font-label-sm text-label-sm mt-0.5">Contact</span></a></div></nav></body></html>
